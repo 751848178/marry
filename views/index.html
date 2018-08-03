@@ -1,0 +1,508 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no, width=device-width">
+    <style type="text/css">
+        #container {
+            height: 500px;
+            width: 100%;
+            margin: 0px;
+        }
+    </style>
+    <title><!--We are getting married!-->{{title}}</title>
+
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap-theme.min.css">
+    <link rel="stylesheet" type="text/css" href="css/default.css">
+    <link rel="stylesheet" type="text/css" href="css/book.css">
+
+    <script type="text/javascript" src="js/jquery-1.11.2.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript"
+            src="http://webapi.amap.com/maps?v=1.4.0&key=ac116ae507fee6ef177bf6f02334965a"></script>
+
+
+</head>
+
+<body>
+<header>
+    <div class="row">
+        <div class="container-fulid col-md-8 col-md-offset-2 center-block" style="margin:0 auto; width:100%;">
+            <nav class="navbar navbar-inverse navbar-fixed-top " role="navigation">
+                <div class="container-fluid">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                                data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <a class="navbar-brand" href=""><img src="/img/heart.svg" class="img-responsive"></a>
+                    </div>
+                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                        <ul class="nav navbar-nav">
+                            <li><a href="#section-front">我们的十年</a></li>
+                            <li><a href="#section-photos">婚纱照</a></li>
+                            <li><a href="#section-info">婚礼信息</a></li>
+                            <li><a href="#section-register">来宾登记</a></li>
+                            <li><a href="#section-message">联系我们</a></li>
+                            <li><a href="#section-null">广告位招租</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </div>
+</header>
+
+<section>
+    <div class="row">
+        <div class="headphoto-container col-md-12 col-lg-12 col-sm-12 col-xs-12">
+            <img src="img/headphoto.jpg" style="width:100%; height:100%;">
+            <div class="col-md-4 col-md-offset-4">
+                <a class="btn btn-register" href="#section-register">来宾登记</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!--our 10 years-->
+<section id="section-front">
+    <div class="navholder"></div>
+    <div class="row">
+        <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12">
+            <h2 class="section-title">我们的十年</h2>
+            <div class="title-underline text-center">
+                <img src="img/love.svg" alt="love">
+            </div>
+            <section id="cd-timeline" class="cd-container">
+                <div class="cd-timeline-block">
+                    <div class="cd-timeline-img cd-encounter">
+                        <img src="img/cd-icon-encounter.svg" alt="Encounter">
+                    </div>
+
+                    <div class="cd-timeline-content">
+                        <h2>初次见面</h2>
+                        <p>我是支书，你是组委，虽然不同班，但都是曾经的交际花。光棍节联欢会，新生艺术节，辩论赛，新生运动会都是我们共同的回忆。</p>
+                        <span class="cd-date">2008-11-11</span>
+                    </div>
+                </div>
+                <div class="cd-timeline-block">
+                    <div class="cd-timeline-img cd-inlove">
+                        <img src="img/cd-icon-inlove.svg" alt="Love">
+                    </div>
+
+                    <div class="cd-timeline-content">
+                        <h2>确定恋爱关系</h2>
+                        <p>一次志愿服务，一顿必胜客，我是不是太好追了？</p>
+                        <span class="cd-date">2009-04-11</span>
+                    </div>
+                </div>
+                <div class="cd-timeline-block">
+                    <div class="cd-timeline-img cd-graduate">
+                        <img src="img/cd-icon-graduate.svg" alt="Graduate">
+                    </div>
+
+                    <div class="cd-timeline-content">
+                        <h2>我们毕业了</h2>
+                        <p>经历了分专业，分别的保研和考研之后，确定了新的五年计划，并于毕业之后见了双方的父母，开始恋爱的新征程。</p>
+                        <span class="cd-date">2012-06-15</span>
+                    </div>
+                </div>
+                <div class="cd-timeline-block">
+                    <div class="cd-timeline-img cd-distance">
+                        <img src="img/cd-icon-distance.svg" alt="Distance">
+                    </div>
+
+                    <div class="cd-timeline-content">
+                        <h2>异地的这一年</h2>
+                        <p>这一年，我是支教老师，你是学生干部，我努力工作，你努力学习，异地的恋爱很辛苦，也会将甜蜜放大。用这一年的时间学会了怎样独处~</p>
+                        <span class="cd-date">2012-08-31</span>
+                    </div>
+                </div>
+                <div class="cd-timeline-block">
+                    <div class="cd-timeline-img cd-movie">
+                        <img src="img/cd-icon-location.svg" alt="Location">
+                    </div>
+
+                    <div class="cd-timeline-content">
+                        <h2>同学成了学长</h2>
+                        <p>一年异地之后，回到了学校，你成了我可以“依靠”的不靠谱学长。</p>
+                        <span class="cd-date">2013-09-15</span>
+                    </div>
+                </div>
+                <div class="cd-timeline-block">
+                    <div class="cd-timeline-img cd-future">
+                        <img src="img/cd-icon-future.svg" alt="Future">
+                    </div>
+
+                    <div class="cd-timeline-content">
+                        <h2>一起努力向前的我们</h2>
+                        <p>我也毕业啦，辗转几回，既然还是舍不得母校，索性留在这附近吧，开启下一个十年。</p>
+                        <span class="cd-date">2016-01-13至今</span>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+</section>
+<div class="row">
+    <div class="col-md-12">
+        <hr class="hr2">
+    </div>
+</div>
+<!--our 10 years end-->
+
+<section id="section-photos">
+    <div class="navholder"></div>
+    <div class="container">
+        <h2 class="section-title">婚纱照</h2>
+        <div class="title-underline text-center">
+            <img src="img/love.svg" alt="love">
+        </div>
+        <div class="row">
+            <div class="carousel slide col-md-10 col-md-offset-1" id="photo-carousel">
+                <ol class="carousel-indicators">
+                    <li data-target="#photo-carousel" data-slide-to="0" class="active"></li>
+                    <li data-target="#photo-carousel" data-slide-to="1"></li>
+                    <li data-target="#photo-carousel" data-slide-to="2"></li>
+                    <li data-target="#photo-carousel" data-slide-to="3"></li>
+                    <li data-target="#photo-carousel" data-slide-to="4"></li>
+                    <li data-target="#photo-carousel" data-slide-to="5"></li>
+                    <li data-target="#photo-carousel" data-slide-to="6"></li>
+                </ol>
+                <div class="carousel-inner">
+                    <div class="item active">
+                        <img src="./img/photos/1.jpg" alt="First slide">
+                    </div>
+                    <div class="item">
+                        <img src="./img/photos/2.jpg" alt="Second slide">
+                    </div>
+                    <div class="item">
+                        <img src="./img/photos/3.jpg" alt="Third slide">
+                    </div>
+                    <div class="item">
+                        <img src="./img/photos/4.jpg" alt="First slide">
+                    </div>
+                    <div class="item">
+                        <img src="./img/photos/3.jpg" alt="Second slide">
+                    </div>
+                    <div class="item">
+                        <img src="./img/photos/1.jpg" alt="Second slide">
+                    </div>
+                </div>
+                <a class="carousel-control left" href="#photo-carousel" data-slide="prev">&lsaquo;</a>
+                <a class="carousel-control right" href="#photo-carousel" data-slide="next">&rsaquo;</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- 婚礼信息 开始 -->
+<section id="section-info">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <div class="navholder"></div>
+                <h2>婚礼信息</h2>
+                <div class="title-underline text-center">
+                    <img id="backToBeijing" src="img/love.svg" alt="love">
+                </div>
+                <h3 class="section-heading"></h3>
+                <div class="row">
+                    <div class="col-md-3 col-sm-3">
+                        <p class="percentage">婚礼时间</p>
+                        <p class="tagline">2018年<br>10月5日</p>
+                    </div>
+                    <div class="col-md-3 col-sm-3">
+                        <p class="percentage">婚礼地点<br></p>
+                        <p id="hisHome" class="taghome">大连</p>
+                    </div>
+                    <div class="col-md-3 col-sm-3">
+                        <p class="percentage">回门宴时间</p>
+                        <p class="tagline">2018年<br>10月14日</p>
+                    </div>
+                    <div class="col-md-3 col-sm-3">
+                        <p class="percentage">回门宴地点</p>
+                        <p id="herHome" class="taghome">大同</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <hr class="hr2">
+            </div>
+        </div>
+        <div class="col-md-12 text-center">
+            <h2>地图信息</h2>
+            <div id="container" tabindex="0" align="center"></div>
+        </div>
+
+    </div>
+</section>
+<!--婚礼信息 结束 -->
+
+<!--来宾登记 开始 -->
+
+<section id="section-register">
+    <div class="container text-center">
+        <div class="navholder"></div>
+        <div class="row">
+            <div class="col-md-12">
+                <hr class="hr2">
+            </div>
+        </div>
+        <div class="row text-center">
+            <h2>来宾登记</h2>
+            <div class="title-underline text-center">
+                <img src="img/love.svg" alt="love">
+            </div>
+            <div class="col-md-8 col-md-offset-2 col-sm-12" id="registerForm">
+                <form>
+                    <div class="input-wrap">
+                        <label for="name">宾客姓名:</label>
+                        <input type="text" class="text" name="name" id="name">
+                    </div>
+                    <div class="input-wrap">
+                        <label for="name">出席人数:</label>
+                        <input type="text" class="text" name="number" id="number">
+                    </div>
+                    <div class="input-wrap">
+                        <label for="name">预计到达时间:</label>
+                        <input type="text" class="text" name="arrivaltime" id="arrivaltime">
+                    </div>
+                    <button type="submit" class="btn btn-tellthem"> 通知新人</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+<div class="row">
+    <div class="col-md-12">
+        <hr class="hr2">
+    </div>
+</div>
+<!--来宾登记 结束 -->
+
+<!--留言模块 开始 -->
+<section id="section-message">
+    <div class="container text-center">
+        <div class="navholder">
+            <h2>联系我们</h2>
+            <div class="title-underline text-center">
+                <img src="img/love.svg" alt="love">
+            </div>
+            <div class="row">
+                <ul class="align">
+                    <li>
+                        <figure class="book">
+
+                            <!-- Front -->
+
+                            <ul class="hardcover_front">
+                                <li>
+                                    <img src="img/cover.jpg" alt="" width="100%" height="100%">
+                                    <span class="ribbon">新郎</span>
+                                </li>
+                                <li></li>
+                            </ul>
+
+                            <!-- Pages -->
+
+                            <ul class="page">
+                                <li></li>
+                                <li>
+                                    <a>13426028919</a>
+                                </li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                            </ul>
+
+                            <!-- Back -->
+
+                            <ul class="hardcover_back">
+                                <li></li>
+                                <li></li>
+                            </ul>
+                            <ul class="book_spine">
+                                <li></li>
+                                <li></li>
+                            </ul>
+                            <figcaption>
+                                <h1>Zen HTML5</h1>
+                                <span>By Marco Barría for Codrops</span>
+                                <p>Salsify horseradish winter purslane yarrow zucchini bush tomato aubergine cauliflower
+                                    broccoli. Kohlrabi azuki bean chickpea quandong dandelion seakale.</p>
+                            </figcaption>
+                        </figure>
+                    </li>
+                    <li>
+                        <figure class="book">
+
+                            <!-- Front -->
+
+                            <ul class="hardcover_front">
+                                <li>
+                                    <img src="img/cover.jpg" alt="" width="100%" height="100%">
+                                    <span class="ribbon">新娘</span>
+                                </li>
+                                <li></li>
+                            </ul>
+
+                            <!-- Pages -->
+
+                            <ul class="page">
+                                <li></li>
+                                <li>
+                                    <a style="padding-top:50">13401154219</a>
+                                </li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                            </ul>
+
+                            <!-- Back -->
+
+                            <ul class="hardcover_back">
+                                <li></li>
+                                <li></li>
+                            </ul>
+                            <ul class="book_spine">
+                                <li></li>
+                                <li></li>
+                            </ul>
+                            <figcaption>
+                                <h1>Zen HTML5</h1>
+                                <span>By Marco Barría for Codrops</span>
+                                <p>Salsify horseradish winter purslane yarrow zucchini bush tomato aubergine cauliflower
+                                    broccoli. Kohlrabi azuki bean chickpea quandong dandelion seakale.</p>
+                            </figcaption>
+                        </figure>
+                    </li>
+                </ul>
+            </div>
+            <!--<div class="row">
+                <div class="col-md-10 col-md-offset-1 text-center" id="contactMessage">
+                    <h5>鼠标放置在照片上，显示两人的联系方式</h5>
+                    <p id="contactMale"><a>联系新郎</a></p>
+                    <p id="contactFemale"><a>联系新娘</a></p>
+                    <img class="image" id="male" src="img/QQ%E5%9B%BE%E7%89%8720170926113800.jpg">
+                    <img class="image" id="female"  src="img/QQ%E5%9B%BE%E7%89%8720170926113800.jpg">
+
+                </div>
+            </div>-->
+
+        </div>
+    </div>
+</section>
+<!--留言模块 结束 -->
+
+
+<script type="text/javascript">
+    //show the map
+    var map111 = new AMap.Map('container', {
+        mapStyle: 'amap://styles/18d680e30e137dff8d14d90bb099ce57',
+        resizeEnable: true,
+        zoom: 500,
+        center: [116.3656960000, 39.9911550000]
+    });
+    var marker = new AMap.Marker({
+        icon: 'img/2.png',//24px*24px
+        position: [116.3656960000, 39.9911550000],
+        offset: new AMap.Pixel(-12, -12),
+        map: map111
+    });
+
+    $("#hisHome").click(function () {
+        map111 = new AMap.Map('container', {
+            mapStyle: 'amap://styles/18d680e30e137dff8d14d90bb099ce57',
+            resizeEnable: true,
+            zoom: 500,
+            center: [122.0184677839, 39.6277880180]
+        });
+        marker = new AMap.Marker({
+            icon: 'img/2.png',//24px*24px
+            position: [122.0184677839, 39.6277880180],
+            offset: new AMap.Pixel(-12, -12),
+            map: map111
+        });
+    });
+
+    $("#herHome").click(function () {
+        map111 = new AMap.Map('container', {
+            mapStyle: 'amap://styles/18d680e30e137dff8d14d90bb099ce57',
+            resizeEnable: true,
+            zoom: 500,
+            center: [113.1798756123, 40.0396489960]
+        });
+        marker = new AMap.Marker({
+            icon: 'img/2.png',//24px*24px
+            position: [113.1798756123, 40.0396489960],
+            offset: new AMap.Pixel(-12, -12),
+            map: map111
+        });
+    });
+
+    $("#backToBeijing").click(function () {
+        map111 = new AMap.Map('container', {
+            mapStyle: 'amap://styles/18d680e30e137dff8d14d90bb099ce57',
+            resizeEnable: true,
+            zoom: 500,
+            center: [116.3656960000, 39.9911550000]
+        });
+        marker = new AMap.Marker({
+            icon: 'img/2.png',//24px*24px
+            position: [116.3656960000, 39.9911550000],
+            offset: new AMap.Pixel(-12, -12),
+            map: map111
+        });
+    });
+
+    //submit the form
+    $("form").submit(function (e) {
+        if(!$("[name=name]").val()){
+            alert("请填写宾客姓名");
+            return false;
+        }
+        if(!$("[name=number]").val()){
+            alert("请填写出席人数");
+            return false;
+        }
+        if(!$("[name=arrivaltime]").val()){
+            alert("请填写预计到达时间");
+            return false;
+        }
+        $.post("/addGuest", {
+            name: $("[name=name]").val(),
+            number: $("[name=number]").val(),
+            arrivaltime: $("[name=arrivaltime]").val()
+        }, function (data) {
+            if(data.code == 200) {
+                alert(data.message);
+            }
+        });
+        return false;
+    });
+
+    //check the contactNumber
+    $("#male").hover(function () {
+        $("#contactMale").css("display", "block");
+    }, function () {
+        $("#contactMale").css("display", "none");
+    });
+
+    $("#female").hover(function () {
+        $("#contactFemale").css("display", "block");
+    }, function () {
+        $("#contactFemale").css("display", "none");
+    });
+</script>
+</body>
+
+</html>
